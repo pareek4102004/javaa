@@ -1,0 +1,42 @@
+public class butterfly_patttern {
+    
+
+
+    public static void pattern(int n){
+//for 1st half 
+        for(int i =1;i<=n;i++){
+            //star i;
+            for(int j =1;j<=i;j++){
+                System.out.print("*");
+            }
+            // spaces = 2*n-i
+            for(int j =1;j<=2*(n-i);j++){
+                System.out.print(" ");
+            }
+            // star i
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+       
+        }
+        //for 2nd half 
+        for(int i=n;i>=1;i--){   // only this line chnge for print the mirror of pattern  
+        // copy same code of 1st half 
+         for(int j =1;j<=i;j++){
+            System.out.print("*");
+        }
+        for(int j =1;j<=2*(n-i);j++){
+            System.out.print(" ");
+        }
+        for(int j=1;j<=i;j++){
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+    }
+           
+    public static void main(String[] args) {
+        pattern(3);
+    }
+}
