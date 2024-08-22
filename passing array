@@ -1,0 +1,27 @@
+public class passing_array {
+    
+    public static void update(int marks[],int NONchangable){
+ NONchangable= 4;
+for (int i=0; i<marks.length;i++){
+marks[i]=marks[i]+2;
+
+}
+    
+}
+
+    
+
+
+    public static void main(String[] args) {
+        
+        int marks[]={2,4,6};
+        int NONchangable = 5;
+        
+       update(marks,NONchangable);
+       for(int i=0;i<marks.length;i++){
+        System.out.println(marks[i]);
+        System.out.println("chnge = "+NONchangable);
+       }
+      
+    }
+}
